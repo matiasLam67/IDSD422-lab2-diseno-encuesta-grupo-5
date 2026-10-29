@@ -105,9 +105,6 @@ Para proteger la privacidad de los participantes en el estudio y cumplir con el 
 
 ## 7. Verificación con herramientas (Python/R)
 
-*Escribe `scripts/verificacion_encuesta.py` (o `.R`): debe cargar `plantillas/encuesta_respuestas.csv` y reportar los tipos de cada columna, los datos faltantes por columna y la distribución de `satisfaccion_general` y `recomendaria`. Incluye la salida y responde:*
-
-
 ``` python
 import pandas as pd
 
@@ -120,8 +117,8 @@ print(df.dtypes)
 print("\nDATOS FALTANTES POR COLUMNA")
 print(df.isnull().sum())
 ```
-
+`El código que se muestra en la parte superior es un código temporal, esto debido a que para poder contestar las preguntas debemos realizar las encuestas y comparar con la sección por lo cual es solo un ejemplo general`
 - ¿Coinciden los tipos con tu predicción de la sección 4?
 - ¿Cuántos datos faltantes hay por columna?
 
-*Ejecuta el script sobre el CSV final (separa con un filtro de la columna `origen` las filas reales de las simuladas): ¿qué resultado delataría un sesgo de **no respuesta** y cuál un sesgo de **respuesta**? Escribe tu interpretación usando solo las respuestas reales.*
+¿qué resultado delataría un sesgo de **no respuesta** y cuál un sesgo de **respuesta**? Escribe tu interpretación usando solo las respuestas reales.
