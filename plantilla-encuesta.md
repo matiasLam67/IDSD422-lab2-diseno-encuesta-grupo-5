@@ -92,9 +92,21 @@ Se espera que las respuestas se carguen como texto (object en pandas). Sin embar
 | **2. Sesgo de deseabilidad social y preguntas hipotéticas:** Las preguntas 8 y 9 evalúan un escenario hipotético, esto suele llevar a los encuestados a responder de forma positiva o complaciente sin reflejar su comportamiento real.       | Redactar al inicio de esa sección un mensaje aclarando que la encuesta es totalmente **anónima** y que no existen respuestas _"correctas"_ o _"esperadas"._ Además, usar la pregunta 6 (frecuencia real de disponibilidad) para contrastar lo que el usuario experimenta frente a lo que desearía. |
 
 ## 6. Confidencialidad (RA3)
+Los únicos datos personales que se solicitarán a los participantes son los siguientes:
 
-- Datos personales que se piden y por qué:
-- Plan de anonimización (qué se quita o codifica antes de compartir):
+ - **Nombres y apellidos:** Para llevar un control interno de la muestra y evitar duplicidad de respuestas.
+- **Correo electrónico:** Como mecanismo de validación, dado que la encuesta se administrará a través de formularios en línea.
+- **Ciudad de residencia:** Para comprobar que los encuestados pertenecen a una de las tres ciudades de interés definidas en el caso de estudio.
+
+
+Para proteger la privacidad de los participantes en el estudio y cumplir con el tratamiento ético de los datos antes de realizar la exportación de los mismos a un archivo CSV. Se realizaran las siguientes acciones:
+
+- 1.- Se eliminara la columna con los nombres y apellidos de los participantes y se les aignara un código id  unico a cada fila por ejemplo C_001.
+
+
+- 2.- Se eliminara los correos electrónicos del CSV final dado que este unicámente es un requisito para poder llenar una encuesta vía internet usando herramientas como GoogleForms.
+
+
 
 ## 7. Verificación con herramientas (Python/R)
 
@@ -113,7 +125,7 @@ print(df.dtypes)
 print("\nDATOS FALTANTES POR COLUMNA")
 print(df.isnull().sum())
 ```
-`El código que se muestra en la parte superior es un código temporal, esto debido a que para poder contestar las preguntas debemos realizar las encuestas y comparar con la sección por lo cual es solo un ejemplo general`
+
 - ¿Coinciden los tipos con tu predicción de la sección 4?
 - ¿Cuántos datos faltantes hay por columna?
 
