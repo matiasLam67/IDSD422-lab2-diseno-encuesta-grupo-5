@@ -1,5 +1,81 @@
-respuesta_id,fecha,ciudad,edad,genero,frecuencia_visita,satisfaccion_general,recomendaria,comentario,origen
-R001,2026-11-01,Quito,28,Femenino,semanal,4,Si,El servicio es bueno,real
-R002,2026-11-01,Guayaquil,35,Masculino,quincenal,3,No,Precios altos,real
-R003,2026-11-02,Cuenca,41,Femenino,semanal,5,Si,Excelente atención,real
-R004,2026-11-02,Quito,24,Masculino,ocasional,4,Si,,simulada
+id_respondente,edad,frecuencia_compra,ciudad,satisfaccion_variedad,suficiente_variedad_marcas,frecuencia_agotado,alternativa_agotado,categoria_agotada,satisfaccion_disponibilidad,accion_producto_no_disponible,origen
+R001,18 a 25 años,Varias veces por semana,Quito,Ni satisfecho/a ni insatisfecho/a,De acuerdo,Algunas veces,Algunas veces,Bebidas,Ni satisfecho/a ni insatisfecho/a,Compro el producto en otro establecimiento,real
+R002,18 a 25 años,Varias veces por semana,Quito,Satisfecho/a,De acuerdo,Algunas veces,Algunas veces,Productos empacados / Abarrotes,Satisfecho/a,Compro el producto en otro establecimiento,real
+R003,18 a 25 años,Una vez al mes,Quito,Satisfecho/a,De acuerdo,Casi nunca,Siempre,Cuidado personal,Satisfecho/a,Compro el producto en otro establecimiento,real
+R004,18 a 25 años,Nunca o no compro en RetailAndina,,,,,,,,,real
+R005,18 a 25 años,Nunca o no compro en RetailAndina,,,,,,,,,real
+R006,36 a 50 años,Varias veces por semana,Quito,Muy satisfecho/a,Totalmente de acuerdo,Casi nunca,Siempre,Alimentos frescos,Muy satisfecho/a,Compro otra marca o presentación en RetailAndina,real
+R007,36 a 50 años,De 2 a 3 veces al mes,Quito,Ni satisfecho/a ni insatisfecho/a,Ni de acuerdo ni en desacuerdo,Casi nunca,Algunas veces,Productos de limpieza,Satisfecho/a,Compro el producto en otro establecimiento,real
+R008,18 a 25 años,Varias veces por semana,Atuntaqui,Muy insatisfecho/a,De acuerdo,Casi nunca,Casi siempre,Cuidado personal,Satisfecho/a,Compro otra marca o presentación en RetailAndina,real
+R009,18 a 25 años,Nunca o no compro en RetailAndina,,,,,,,,,real
+R010,26 a 35 años,Varias veces por semana,Atuntaqui,Muy satisfecho/a,Totalmente de acuerdo,Algunas veces,No aplica (nunca he encontrado un producto agotado),Alimentos frescos,Muy satisfecho/a,Vuelvo otro día a RetailAndina,real
+R011,18 a 25 años,De 2 a 3 veces al mes,Atuntaqui,Muy satisfecho/a,Totalmente de acuerdo,Casi nunca,Siempre,Alimentos frescos,Muy satisfecho/a,Compro otra marca o presentación en RetailAndina,real
+R012,26 a 35 años,Nunca o no compro en RetailAndina,,,,,,,,,real
+R013,26 a 35 años,Una vez por semana,Atuntaqui,Satisfecho/a,De acuerdo,Casi nunca,Siempre,Bebidas,Muy insatisfecho/a,Vuelvo otro día a RetailAndina,real
+R014,26 a 35 años,Una vez por semana,Atuntaqui,Ni satisfecho/a ni insatisfecho/a,Ni de acuerdo ni en desacuerdo,Nunca,Algunas veces,Productos empacados / Abarrotes,Ni satisfecho/a ni insatisfecho/a,Cancelo la compra y no busco sustituto,real
+R015,18 a 25 años,Una vez por semana,Atuntaqui,Satisfecho/a,De acuerdo,Algunas veces,Siempre,Bebidas,Satisfecho/a,Vuelvo otro día a RetailAndina,real
+R016,26 a 35 años,Una vez al mes,Atuntaqui,Satisfecho/a,De acuerdo,Casi siempre,Algunas veces,Alimentos frescos,Satisfecho/a,Compro otra marca o presentación en RetailAndina,real
+R017,18 a 25 años,Una vez al mes,Quito,Satisfecho/a,De acuerdo,Algunas veces,Casi siempre,Alimentos frescos,Satisfecho/a,Compro el producto en otro establecimiento,real
+R018,18 a 25 años,Nunca o no compro en RetailAndina,,,,,,,,,real
+R019,18 a 25 años,Una vez por semana,Quito,Satisfecho/a,De acuerdo,Casi nunca,Casi siempre,Cuidado personal,Satisfecho/a,Compro el producto en otro establecimiento,real
+R020,36 a 50 años,Una vez por semana,Quito,Satisfecho/a,De acuerdo,Algunas veces,Siempre,Cuidado personal,Ni satisfecho/a ni insatisfecho/a,Compro el producto en otro establecimiento,real
+R021,18 a 25 años,Una vez por semana,Quito,Ni satisfecho/a ni insatisfecho/a,Ni de acuerdo ni en desacuerdo,Casi nunca,Casi nunca,Alimentos frescos,Satisfecho/a,Compro el producto en otro establecimiento,real
+R022,18 a 25 años,Nunca o no compro en RetailAndina,,,,,,,,,real
+R023,18 a 25 años,Una vez por semana,Quito,Ni satisfecho/a ni insatisfecho/a,Ni de acuerdo ni en desacuerdo,Algunas veces,Casi siempre,Alimentos frescos,Ni satisfecho/a ni insatisfecho/a,Compro el producto en otro establecimiento,real
+R024,18 a 25 años,De 2 a 3 veces al mes,Quito,Satisfecho/a,De acuerdo,Casi nunca,Algunas veces,Productos empacados / Abarrotes,Satisfecho/a,Compro el producto en otro establecimiento,real
+R025,51 a 65 años,Una vez al mes,Quito,Satisfecho/a,De acuerdo,Casi nunca,Casi siempre,Otra,Satisfecho/a,Compro otra marca o presentación en RetailAndina,real
+R026,26 a 35 años,De 2 a 3 veces al mes,Quito,Satisfecho/a,De acuerdo,Casi nunca,Algunas veces,Cuidado personal,Satisfecho/a,Compro el producto en otro establecimiento,real
+R027,26 a 35 años,Una vez por semana,Ambato,Muy satisfecho/a,De acuerdo,Casi nunca,Algunas veces,Otra,Satisfecho/a,Cancelo la compra y no busco sustituto,real
+R028,26 a 35 años,Una vez por semana,Quito,Satisfecho/a,De acuerdo,Algunas veces,Casi siempre,Cuidado personal,Satisfecho/a,Compro el producto en otro establecimiento,real
+R029,36 a 50 años,Una vez al mes,Quito,Satisfecho/a,De acuerdo,Casi siempre,Algunas veces,Alimentos frescos,Satisfecho/a,Compro el producto en otro establecimiento,real
+R030,18 a 25 años,Una vez por semana,Quito,Insatisfecho/a,De acuerdo,Casi nunca,Algunas veces,Productos empacados / Abarrotes,Ni satisfecho/a ni insatisfecho/a,Vuelvo otro día a RetailAndina,real
+R031,36 a 50 años,Una vez al mes,Quito,Muy satisfecho/a,Totalmente de acuerdo,Nunca,No aplica (nunca he encontrado un producto agotado),No aplica,Muy satisfecho/a,No aplica,real
+S001,18 a 25 años,Una vez por semana,Quito,Satisfecho/a,De acuerdo,Casi siempre,Casi nunca,Productos empacados / Abarrotes,Satisfecho/a,No aplica,simulada
+S002,51 a 65 años,Nunca o no compro en RetailAndina,,,,,,,,,simulada
+S003,26 a 35 años,Una vez al mes,Quito,Ni satisfecho/a ni insatisfecho/a,Totalmente de acuerdo,Siempre,Siempre,Bebidas,Satisfecho/a,Compro el producto en otro establecimiento,simulada
+S004,26 a 35 años,Nunca o no compro en RetailAndina,,,,,,,,,simulada
+S005,18 a 25 años,Nunca o no compro en RetailAndina,,,,,,,,,simulada
+S006,18 a 25 años,De 2 a 3 veces al mes,Quito,Ni satisfecho/a ni insatisfecho/a,En desacuerdo,Casi nunca,Casi nunca,Productos empacados / Abarrotes,Satisfecho/a,No aplica,simulada
+S007,18 a 25 años,Nunca o no compro en RetailAndina,,,,,,,,,simulada
+S008,36 a 50 años,Varias veces por semana,Quito,Muy satisfecho/a,Totalmente de acuerdo,Casi siempre,Casi siempre,Bebidas,Satisfecho/a,Compro el producto en otro establecimiento,simulada
+S009,26 a 35 años,Una vez por semana,Quito,Ni satisfecho/a ni insatisfecho/a,De acuerdo,Casi nunca,Casi siempre,Cuidado personal,Ni satisfecho/a ni insatisfecho/a,Compro otra marca o presentación en RetailAndina,simulada
+S010,26 a 35 años,Varias veces por semana,Atuntaqui,Satisfecho/a,Totalmente en desacuerdo,Casi nunca,Casi siempre,Productos de limpieza,Muy satisfecho/a,Compro el producto en otro establecimiento,simulada
+S011,Menor de 18 años,Una vez por semana,Quito,Satisfecho/a,Ni de acuerdo ni en desacuerdo,Algunas veces,Casi siempre,Alimentos frescos,Satisfecho/a,Compro el producto en otro establecimiento,simulada
+S012,51 a 65 años,Una vez por semana,Quito,Ni satisfecho/a ni insatisfecho/a,De acuerdo,Casi siempre,No aplica (nunca he encontrado un producto agotado),Alimentos frescos,Satisfecho/a,Compro el producto en otro establecimiento,simulada
+S013,36 a 50 años,Una vez por semana,Quito,Satisfecho/a,Totalmente en desacuerdo,Algunas veces,Algunas veces,Productos de limpieza,Satisfecho/a,Cancelo la compra y no busco sustituto,simulada
+S014,18 a 25 años,Nunca o no compro en RetailAndina,,,,,,,,,simulada
+S015,18 a 25 años,Una vez por semana,Ambato,Satisfecho/a,De acuerdo,Casi nunca,Siempre,Bebidas,Satisfecho/a,Compro el producto en otro establecimiento,simulada
+S016,18 a 25 años,Una vez por semana,Atuntaqui,Satisfecho/a,De acuerdo,Algunas veces,Algunas veces,Otra,Muy insatisfecho/a,Compro otra marca o presentación en RetailAndina,simulada
+S017,18 a 25 años,De 2 a 3 veces al mes,Quito,Satisfecho/a,De acuerdo,Siempre,Algunas veces,Bebidas,Muy satisfecho/a,Compro el producto en otro establecimiento,simulada
+S018,26 a 35 años,Varias veces por semana,Atuntaqui,Insatisfecho/a,Ni de acuerdo ni en desacuerdo,Casi nunca,Casi nunca,Productos empacados / Abarrotes,Insatisfecho/a,Compro otra marca o presentación en RetailAndina,simulada
+S019,18 a 25 años,Menos de una vez al mes,Atuntaqui,Muy satisfecho/a,De acuerdo,Casi nunca,Nunca,Productos de limpieza,Satisfecho/a,Compro otra marca o presentación en RetailAndina,simulada
+S020,18 a 25 años,Varias veces por semana,Quito,Satisfecho/a,Ni de acuerdo ni en desacuerdo,Casi siempre,No aplica (nunca he encontrado un producto agotado),Productos empacados / Abarrotes,Muy satisfecho/a,Compro otra marca o presentación en RetailAndina,simulada
+S021,26 a 35 años,Nunca o no compro en RetailAndina,,,,,,,,,simulada
+S022,18 a 25 años,Una vez al mes,Quito,Insatisfecho/a,De acuerdo,Algunas veces,Casi siempre,Otra,Satisfecho/a,Compro el producto en otro establecimiento,simulada
+S023,18 a 25 años,Una vez por semana,Atuntaqui,Satisfecho/a,De acuerdo,Algunas veces,Algunas veces,Productos empacados / Abarrotes,Satisfecho/a,Compro el producto en otro establecimiento,simulada
+S024,18 a 25 años,Varias veces por semana,Atuntaqui,Satisfecho/a,Totalmente de acuerdo,Casi nunca,Algunas veces,No aplica,Satisfecho/a,No aplica,simulada
+S025,18 a 25 años,Menos de una vez al mes,Quito,Muy insatisfecho/a,De acuerdo,Casi nunca,Algunas veces,Otra,Ni satisfecho/a ni insatisfecho/a,Compro el producto en otro establecimiento,simulada
+S026,36 a 50 años,Una vez al mes,Quito,Satisfecho/a,De acuerdo,Algunas veces,Algunas veces,Alimentos frescos,Satisfecho/a,Vuelvo otro día a RetailAndina,simulada
+S027,18 a 25 años,Una vez al mes,Quito,Ni satisfecho/a ni insatisfecho/a,En desacuerdo,Algunas veces,Casi siempre,Alimentos frescos,Satisfecho/a,Cancelo la compra y no busco sustituto,simulada
+S028,26 a 35 años,Una vez al mes,Quito,Satisfecho/a,De acuerdo,Casi siempre,Casi siempre,Alimentos frescos,Satisfecho/a,Vuelvo otro día a RetailAndina,simulada
+S029,26 a 35 años,Varias veces por semana,Atuntaqui,Ni satisfecho/a ni insatisfecho/a,De acuerdo,Casi siempre,Casi siempre,Alimentos frescos,Satisfecho/a,No aplica,simulada
+S030,Menor de 18 años,Una vez por semana,Atuntaqui,Satisfecho/a,Ni de acuerdo ni en desacuerdo,Casi nunca,Algunas veces,Alimentos frescos,Satisfecho/a,Compro otra marca o presentación en RetailAndina,simulada
+S031,26 a 35 años,Varias veces por semana,Quito,Satisfecho/a,Totalmente de acuerdo,Casi nunca,No aplica (nunca he encontrado un producto agotado),Productos de limpieza,Insatisfecho/a,No aplica,simulada
+S032,18 a 25 años,Nunca o no compro en RetailAndina,,,,,,,,,simulada
+S033,18 a 25 años,Una vez al mes,Quito,Ni satisfecho/a ni insatisfecho/a,Totalmente de acuerdo,Algunas veces,Casi siempre,Alimentos frescos,Insatisfecho/a,Cancelo la compra y no busco sustituto,simulada
+S034,51 a 65 años,Una vez por semana,Quito,Satisfecho/a,De acuerdo,Algunas veces,Casi siempre,Cuidado personal,Satisfecho/a,Compro el producto en otro establecimiento,simulada
+S035,51 a 65 años,Varias veces por semana,Quito,Ni satisfecho/a ni insatisfecho/a,De acuerdo,Algunas veces,Algunas veces,Alimentos frescos,Satisfecho/a,No aplica,simulada
+S036,36 a 50 años,Una vez por semana,Quito,Muy satisfecho/a,De acuerdo,Casi siempre,Algunas veces,Cuidado personal,Muy satisfecho/a,Compro otra marca o presentación en RetailAndina,simulada
+S037,18 a 25 años,Una vez por semana,Ambato,Muy satisfecho/a,De acuerdo,Casi nunca,Algunas veces,Alimentos frescos,Satisfecho/a,Compro el producto en otro establecimiento,simulada
+S038,18 a 25 años,Una vez al mes,Quito,Ni satisfecho/a ni insatisfecho/a,De acuerdo,Casi nunca,Siempre,Alimentos frescos,Ni satisfecho/a ni insatisfecho/a,No aplica,simulada
+S039,26 a 35 años,Una vez al mes,Quito,Satisfecho/a,Ni de acuerdo ni en desacuerdo,Casi nunca,Nunca,Productos de limpieza,Ni satisfecho/a ni insatisfecho/a,Compro el producto en otro establecimiento,simulada
+S040,18 a 25 años,Nunca o no compro en RetailAndina,,,,,,,,,simulada
+S041,18 a 25 años,De 2 a 3 veces al mes,Quito,Satisfecho/a,De acuerdo,Nunca,Nunca,Cuidado personal,Satisfecho/a,Compro el producto en otro establecimiento,simulada
+S042,18 a 25 años,Varias veces por semana,Ambato,Satisfecho/a,Totalmente en desacuerdo,Casi nunca,Nunca,Cuidado personal,Ni satisfecho/a ni insatisfecho/a,Compro el producto en otro establecimiento,simulada
+S043,Menor de 18 años,Una vez al mes,Ambato,Ni satisfecho/a ni insatisfecho/a,De acuerdo,Algunas veces,Siempre,Cuidado personal,Insatisfecho/a,Compro el producto en otro establecimiento,simulada
+S044,36 a 50 años,Una vez al mes,Quito,Insatisfecho/a,Ni de acuerdo ni en desacuerdo,Casi nunca,Casi siempre,Alimentos frescos,Satisfecho/a,Compro el producto en otro establecimiento,simulada
+S045,18 a 25 años,De 2 a 3 veces al mes,Quito,Muy satisfecho/a,Totalmente de acuerdo,Algunas veces,Algunas veces,Alimentos frescos,Insatisfecho/a,Cancelo la compra y no busco sustituto,simulada
+S046,26 a 35 años,Una vez al mes,Quito,Muy satisfecho/a,Totalmente de acuerdo,Nunca,Casi nunca,Cuidado personal,Satisfecho/a,Compro otra marca o presentación en RetailAndina,simulada
+S047,18 a 25 años,De 2 a 3 veces al mes,Quito,Satisfecho/a,Totalmente de acuerdo,Nunca,Algunas veces,Cuidado personal,Satisfecho/a,Vuelvo otro día a RetailAndina,simulada
+S048,26 a 35 años,De 2 a 3 veces al mes,Quito,Satisfecho/a,De acuerdo,Algunas veces,Algunas veces,No aplica,Insatisfecho/a,No aplica,simulada
+S049,26 a 35 años,Una vez por semana,Quito,Satisfecho/a,Totalmente en desacuerdo,Casi nunca,Algunas veces,Productos empacados / Abarrotes,Insatisfecho/a,Cancelo la compra y no busco sustituto,simulada
