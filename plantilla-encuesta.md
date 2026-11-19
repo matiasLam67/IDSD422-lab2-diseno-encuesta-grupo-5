@@ -8,9 +8,7 @@
 
 **Repositorio (fork):** [https://github.com/pavexl/IDSD422-lab2-diseno-encuesta-grupo-5](https://github.com/pavexl/IDSD422-lab2-diseno-encuesta-grupo-5)
 
-**Enfoque del equipo (aprobado en clase):** Variedad y stock: satisfacción y disponibilidad.
-
-Completa cada sección. Usa commits por sección; la historia del repositorio se revisa.
+**Enfoque del equipo (aprobado en clase):** Variedad y stock, satisfacción y disponibilidad.
 
 ## 1. Objetivo de la encuesta
 
