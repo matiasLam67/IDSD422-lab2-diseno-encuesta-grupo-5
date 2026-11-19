@@ -4,9 +4,9 @@
 
 **Integrantes:** Ganchala Pavel, Lamiña Matias, Magarisca Bryan, Martínez Domenica, Medina Juan
 
-**Fecha:** 20/10/2026
+**Fecha:** 19/11/2026
 
-**Repositorio (fork):** [https://github.com/matiasLam67/IDSD422-lab2-diseno-encuesta-grupo-5.git](https://github.com/matiasLam67/IDSD422-lab2-diseno-encuesta-grupo-5.git)
+**Repositorio (fork):** [https://github.com/pavexl/IDSD422-lab2-diseno-encuesta-grupo-5](https://github.com/pavexl/IDSD422-lab2-diseno-encuesta-grupo-5)
 
 **Enfoque del equipo (aprobado en clase):** Variedad y stock: satisfacción y disponibilidad.
 
@@ -14,83 +14,59 @@ Completa cada sección. Usa commits por sección; la historia del repositorio se
 
 ## 1. Objetivo de la encuesta
 
-Estimar, dentro de la muestra, la proporción de compradores de RetailAndina en Quito, Guayaquil y Cuenca que califican con «Satisfecho/a» o «Muy satisfecho/a» la variedad y disponibilidad de productos, así como identificar las categorías con mayor frecuencia de quiebre de stock y la acción tomada ante un producto agotado. Estos resultados orientarán la decisión de gerencia para priorizar la reposición de inventario y ampliar el surtido en las categorías críticas durante el siguiente ciclo operativo.
+Estimar, dentro de la muestra, la proporción de participantes que califican positivamente la variedad y disponibilidad de productos en supermercados, tomando a RetailAndina como un caso empresarial ficticio. Asimismo, identificar las categorías en las que los participantes reportan mayor frecuencia de productos agotados y las acciones que suelen tomar ante esa situación. Los resultados servirán como referencia descriptiva para orientar decisiones hipotéticas de surtido y reposición de inventario.
 
 ## 2. Población objetivo
 
-- **Población:** Personas mayores de edad (18 años o más) residentes en las zonas urbanas de Quito, Guayaquil o Cuenca que realizan compras en supermercados y tienen vínculo o experiencia de compra en RetailAndina.
-- **Inclusión:** Tener 18 años o más, residir o comprar habitualmente en Quito, Guayaquil o Cuenca y responder el cuestionario completo según su frecuencia de compra.
-- **Exclusión:** Menores de 18 años y personas residentes en otras ciudades fuera del alcance comercial del estudio. *(Nota: quienes responden «Nunca o no compro en RetailAndina» en la pregunta 2 finalizan la sección operativa de tienda y conservan valores `NaN` en las preguntas 3 a 10 por salto lógico del cuestionario).*
+- **Población:** Personas mayores de edad (18 años o más) que residen en las zonas urbanas de Quito, Guayaquil o Cuenca y realizan compras en supermercados al menos una vez al mes.
 
-### Límites del estudio
-
-- **Geográfico:** Ciudades principales de Quito, Guayaquil y Cuenca; se excluyen otras localidades para mantener comparables las plazas comerciales de la cadena.
-- **Demográfico:** Personas desde los 18 años en adelante (segmentadas en rangos etarios desde 18–25 hasta más de 65 años) con autonomía de decisión de compra.
-- **Comercial:** Compradores activos de RetailAndina para evaluar variedad, marcas, quiebres de stock y disponibilidad; se mantiene el registro de no compradores en la pregunta de frecuencia para dimensionar el alcance comercial.
-- **Temporal:** Percepción y hábitos declarados al momento de responder, durante noviembre de 2026.
-
-### Justificación
-
-Delimitar la población a personas mayores de 18 años en Quito, Guayaquil y Cuenca permite evaluar el desempeño de surtido y reposición en las tres principales plazas urbanas del país sin sesgar las métricas de tienda con opiniones de personas que nunca compran en la cadena.
-
+- **Límites y justificación:** El estudio se delimita geográficamente a las zonas urbanas de Quito, Guayaquil y Cuenca, Ecuador. Se consideran personas de 18 años o más que compran en supermercados al menos una vez al mes, porque pueden aportar experiencias sobre la variedad de productos, la disponibilidad y las situaciones de agotamiento de stock. RetailAndina se utiliza como un caso empresarial ficticio para contextualizar la encuesta; por tanto, no es necesario que los participantes sean clientes reales de dicha empresa. La información corresponde a las percepciones de los participantes en el momento de responder la encuesta, durante noviembre de 2026.
 
 ## 3. Método de muestreo
 
-- **Método:** Muestreo no probabilístico por conveniencia con difusión por referidos en canales digitales (bola de nieve). Se contactó a personas accesibles de la red de los integrantes y se aplicó un salto lógico para separar a los compradores activos de quienes no compran en RetailAndina. Este método permite reunir la cuota de 15 a 30 respuestas reales exigida por la práctica, pero no permite generalizar estadísticamente los resultados a toda la población de las tres ciudades; dicha limitación se declara explícitamente en este informe.
-- **Tamaño y justificación:** Se recolectaron **31 respuestas reales** (`origen = 'real'`), superando el mínimo de 15 a 30 respuestas exigido; de ellas, **25** corresponden a compradores activos de RetailAndina y **6** declararon «Nunca o no compro en RetailAndina». Para alcanzar el volumen de práctica (entre 60 y 100 filas) sin confundir datos sintéticos con evidencia de campo, se generaron **49 registros simulados** con semilla fija (`seed = 42`), marcados con `origen = 'simulada'`, totalizando **80 filas** en `plantillas/encuesta_respuestas.csv`.
-- **No respuesta:** Se invitó a  personas de la red de contactos del equipo y se obtuvieron **6 respuestas nulas**, debido a que eran menores de edad y no compraban en RetailAndina.
-- **Cómo se seleccionarán los participantes:** Cada integrante difundió el enlace del formulario entre familiares, amigos y conocidos mayores de 18 años en Quito, Guayaquil y Cuenca, procurando diversidad de rangos de edad y frecuencia de compra.
+- **Método:** Muestreo no probabilístico por conveniencia y referencias (bola de nieve).
 
+- **Tamaño y justificación:** Se recopilaron 31 respuestas reales, de las cuales 25 están completas en las preguntas de evaluación y 6 son parciales. Estas últimas corresponden a participantes que seleccionaron «Nunca o no compro en RetailAndina» en la pregunta 2, lo que activó la lógica de salto y dejó sin respuesta las preguntas 3 a 10. Se conservaron las seis respuestas parciales para mantener la integridad de los datos. Además, se incorporaron 44 registros simulados para fines académicos, identificados con `origen = simulada`. El archivo final contiene 75 registros: 31 reales y 44 simulados.
+
+- **Cómo se seleccionaron los participantes:** El cuestionario se compartió con familiares, amigos, compañeros y conocidos de los integrantes del grupo. La participación fue voluntaria y dependió de la accesibilidad y disponibilidad de las personas. La captación se realizó mediante conveniencia y referencias, por lo que no todos los integrantes de la población tuvieron la misma probabilidad de participar. Los registros simulados que no cumplían los criterios de inclusión definidos para la práctica fueron retirados.
+
+- **Equivalente en código (Python o R):** El reclutamiento se realizó por conveniencia y referencias, no mediante una selección aleatoria. El siguiente código permite identificar y seleccionar de forma reproducible las 25 respuestas reales completas para su revisión. Esta selección se realiza después de recopilar las respuestas y no representa el procedimiento original de reclutamiento.
 
 ```python
 import pandas as pd
 
 respuestas = pd.read_csv("plantillas/encuesta_respuestas.csv")
-elegibles = respuestas.query(
-    "origen == 'real' and frecuencia_compra != 'Nunca o no compro en RetailAndina'"
+
+completas = respuestas[
+    (respuestas["origen"] == "real") &
+    (respuestas["frecuencia_compra"] != "Nunca o no compro en RetailAndina")
+]
+
+muestra = completas.sample(
+    n=25,
+    random_state=42
 )
-muestra = elegibles.sample(
-    n=min(25, len(elegibles)),
-    random_state=42,
-)
-print(muestra[["id_respondente", "edad", "ciudad", "frecuencia_compra"]])
+
+print(muestra["id_respondente"].tolist())
 ```
 
-### Salida de la corrida
+**Salida de una corrida:**
 
-| Índice | id_respondente | edad | ciudad | frecuencia_compra |
-|---:|:---|:---|:---|:---|
-| 12 | R013 | 26 a 35 años | Cuenca | Una vez por semana |
-| 22 | R023 | 18 a 25 años | Quito | Una vez por semana |
-| 0 | R001 | 18 a 25 años | Quito | Varias veces por semana |
-| 29 | R030 | 18 a 25 años | Quito | Una vez por semana |
-| 15 | R016 | 26 a 35 años | Cuenca | Una vez al mes |
-| 13 | R014 | 26 a 35 años | Cuenca | Una vez por semana |
-| 18 | R019 | 18 a 25 años | Quito | Una vez por semana |
-| 1 | R002 | 18 a 25 años | Quito | Varias veces por semana |
-| 28 | R029 | 36 a 50 años | Quito | Una vez al mes |
-| 7 | R008 | 18 a 25 años | Cuenca | Varias veces por semana |
-| 2 | R003 | 18 a 25 años | Quito | Una vez al mes |
-| 16 | R017 | 18 a 25 años | Quito | Una vez al mes |
-| 20 | R021 | 18 a 25 años | Quito | Una vez por semana |
-| 5 | R006 | 36 a 50 años | Quito | Varias veces por semana |
-| 6 | R007 | 36 a 50 años | Quito | De 2 a 3 veces al mes |
-| 26 | R027 | 26 a 35 años | Guayaquil | Una vez por semana |
-| 23 | R024 | 18 a 25 años | Quito | De 2 a 3 veces al mes |
-| 27 | R028 | 26 a 35 años | Quito | Una vez por semana |
-| 24 | R025 | 51 a 65 años | Quito | Una vez al mes |
-| 30 | R031 | 36 a 50 años | Quito | Una vez al mes |
-| 10 | R011 | 18 a 25 años | Cuenca | De 2 a 3 veces al mes |
-| 14 | R015 | 18 a 25 años | Cuenca | Una vez por semana |
-| 19 | R020 | 36 a 50 años | Quito | Una vez por semana |
-| 25 | R026 | 26 a 35 años | Quito | De 2 a 3 veces al mes |
-| 9 | R010 | 26 a 35 años | Cuenca | Varias veces por semana |
+```text
+['R013', 'R023', 'R001', 'R030', 'R016',
+ 'R014', 'R019', 'R002', 'R029', 'R008',
+ 'R003', 'R017', 'R021', 'R006', 'R007',
+ 'R027', 'R024', 'R028', 'R025', 'R031',
+ 'R011', 'R015', 'R020', 'R026', 'R010']
+```
 
-Como existen 25 compradores activos reales elegibles (`origen == 'real'`), `sample()` selecciona de forma reproducible los 25 registros fijando el orden mediante `random_state=42`. No constituye un muestreo probabilístico de toda la población urbana, por lo que los hallazgos se interpretan de manera descriptiva sobre la muestra recolectada.
+La semilla `random_state=42` permite reproducir el orden de selección. El resultado contiene 25 respuestas reales completas. Este procedimiento sirve para organizar y revisar los registros recopilados, pero no debe confundirse con el reclutamiento por conveniencia realizado durante la encuesta.
 
 ## 4. Cuestionario (10 preguntas)
 
-El cuestionario consta de 10 preguntas cerradas, neutras y específica, una idea por pregunta, conservando exactamente las mismas opciones aplicadas en el formulario. La pregunta 1 y 2 actúa como salto lógico: quienes responden «Menor de 18 años» y/o «Nunca o no compro en RetailAndina» no responden las preguntas 3 a 10 (registrándose como `NaN` en el CSV).
+El cuestionario consta de 10 preguntas cerradas, diseñadas para recopilar información sobre la variedad de productos, su disponibilidad y la satisfacción de los participantes. Se conserva la redacción y las opciones originales utilizadas en el formulario aplicado. Las preguntas 1 y 2 incluyen una lógica de salto: quienes seleccionan «Menor de 18 años» en la primera pregunta o «Nunca o no compro en RetailAndina» en la segunda finalizan el cuestionario y no responden las preguntas 3 a 10. Estas respuestas posteriores se registran como datos faltantes (`NaN`) en el CSV.
+
+**Limitación del instrumento:** Aunque las preguntas hacen referencia a RetailAndina, esta empresa es un caso ficticio. Los participantes fueron informados de esta condición y respondieron basándose en sus experiencias generales con supermercados. Por tanto, las respuestas representan percepciones generales y no experiencias verificadas de compra en RetailAndina.
 
 | # | Variable | Pregunta | Tipo de variable | Dtype al cargar |
 |---:|:---|:---|:---|:---|
@@ -127,27 +103,29 @@ El cuestionario consta de 10 preguntas cerradas, neutras y específica, una idea
 
 ## 5. Análisis de sesgos
 
+| Sesgo potencial | Mitigación |
+|---|---|
+| **Sesgo de selección:** La encuesta se difundió entre familiares, amigos, compañeros y conocidos del equipo, por lo que puede existir una sobrerrepresentación de personas jóvenes de 18 a 25 años (17 de 31 respuestas reales, 54.8 %) y de participantes de Quito (17 de 25 respuestas reales completas, 68.0 %). La participación de Guayaquil fue menor (1 respuesta completa) y la de Cuenca fue de 7 respuestas completas. | Ampliar la difusión mediante contactos y referencias en las tres ciudades, especialmente entre los grupos de edad menos representados. Declarar que se utilizó un muestreo no probabilístico por conveniencia y referencias, y presentar los resultados como descriptivos de la muestra, sin generalizarlos a toda la población. |
+| **Sesgo de respuesta:** Los participantes, al conocer a integrantes del equipo, podrían sentirse inclinados a dar calificaciones favorables por cortesía. Además, podrían recordar con mayor facilidad situaciones recientes de productos agotados. | Mantener la participación voluntaria, proteger la confidencialidad de los participantes, evitar solicitar datos identificativos en el archivo compartido y utilizar preguntas neutrales con escalas equilibradas que incluyan opciones positivas, negativas y neutras. |
 
-| Sesgo potencial | Cómo podría aparecer | Mitigación |
-| :--- | :--- | :--- |
-| **Sesgo de selección** | Al difundir el formulario entre conocidos del equipo,se sobrerrepresentan jóvenes de 18 a 25 años (17 de 31 reales, 54.8 %) y compradores de Quito (17 de 25 compradores reales, 68.0 %), frente a una menor participación en Cuenca (7) y Guayaquil (1). | Ampliar la difusión mediante referidos en Guayaquily Cuenca y en rangos mayores de 25 años, declarar explícitamente que el muestreo es no probabilístico por conveniencia y reportar resultados desagregados solo sobre origen == 'real'. |
-| **Sesgo de respuesta** | Los encuestados cercanos al equipo pueden tender a otorgar calificaciones favorables por cortesía, o recordar con mayor facilidad episodios puntuales de quiebre de stock reciente. | Garantizar anonimato total (sin solicitar nombre ni correo), emplear redacción neutral con escalas Likert balanceadas de 5 puntos incluyendo punto neutro y enfocar las preguntas en hábitos habituales. |
+### Evidencia en las respuestas reales
 
+El análisis de las preguntas de evaluación se realiza únicamente con las 25 respuestas reales completas. Los resultados describen las experiencias generales de los participantes en supermercados, no la satisfacción de clientes reales de RetailAndina.
 
-### Evidencia en las respuestas reales (`n = 31` totales; `n = 25` compradores activos)
+- **Satisfacción con la variedad:** 18 de 25 participantes (72.0 %) respondieron «Satisfecho/a» o «Muy satisfecho/a».
+- **Satisfacción con la disponibilidad:** 19 de 25 participantes (76.0 %) respondieron «Satisfecho/a» o «Muy satisfecho/a».
+- **Comportamiento ante productos no disponibles:** 13 de 25 participantes (52.0 %) indicaron que compran el producto en otro establecimiento.
+- **Categorías con productos agotados:** las más mencionadas fueron alimentos frescos (8 de 25, 32.0 %) y cuidado personal (6 de 25, 24.0 %).
 
-* **Satisfacción general:** Entre los 25 compradores reales activos, el **72.0 %** (18/25) calificó con «Satisfecho/a» (52.0 %) o «Muy satisfecho/a» (20.0 %) la variedad de productos, y el **76.0 %** (19/25) calificó positivamente la disponibilidad (60.0 % «Satisfecho/a» y 16.0 % «Muy satisfecho/a»).
-* **Comportamiento ante quiebres de stock:** Sin embargo, el **52.0 %** (13/25) afirmó que, cuando un producto no está disponible, compra el producto en otro establecimiento, concentrándose los quiebres reportados en **Alimentos frescos** (8/25, 32.0 %) y **Cuidado personal** (6/25, 24.0 %).
-* **Nota metodológica:** Las 49 filas simuladas (`origen = 'simulada'`) fueron generadas únicamente para completar el volumen muestral de práctica (80 filas en total) y no se utilizan para extraer conclusiones sobre sesgos ni comportamiento real de los clientes.
-
+**Nota metodológica:** El archivo final contiene 44 registros simulados (`origen = simulada`), utilizados para practicar el procesamiento de datos. Estos registros no se consideran respuestas reales ni se utilizan para obtener las conclusiones anteriores. Los resultados presentados corresponden exclusivamente a las 25 respuestas reales completas. Las otras 6 respuestas reales se conservan como parciales y no se incluyen en los cálculos de satisfacción.
 
 ## 6. Confidencialidad (RA3)
+
 ### Protección de datos y anonimización
 
-* **Datos personales que se piden y por qué:** Únicamente se almacenan el rango de edad (`edad`), la frecuencia de compra (`frecuencia_compra`) y la ciudad habitual de compra (`ciudad`), necesarios para segmentar el perfil del comprador y contextualizar las plazas comerciales. No se solicitan nombres, apellidos, cédulas, teléfonos, correos electrónicos, direcciones exactas ni datos financieros.
+- **Datos personales que se piden y por qué:** Google Forms recopiló automáticamente las direcciones de correo electrónico de los participantes. Además, el cuestionario solicitó rangos de edad, frecuencia de compra y ciudad habitual de compra, con el propósito de describir las características generales de la muestra y contextualizar las respuestas. No se solicitaron nombres, apellidos, cédulas, teléfonos, direcciones exactas ni datos financieros.
 
-* **Plan de anonimización:** Se eliminó la columna `Marca temporal` del formulario original para evitar trazabilidad por hora de envío. Cada registro real recibió un código secuencial anónimo (`R001` a `R031`) y cada registro simulado recibió un código (`S001` a `S049`), diferenciados mediante la columna `origen` (`real` / `simulada`). El archivo crudo exportado desde Google Forms no se sube al repositorio; únicamente se publica el archivo limpio y anonimizado en `plantillas/encuesta_respuestas.csv`.
-
+- **Plan de anonimización:** Para compartir los resultados en el repositorio se excluyeron las direcciones de correo electrónico y la marca temporal del formulario. Cada respuesta real se identificó mediante un código secuencial (`R001` a `R031`) y cada registro simulado mediante un código (`S001` a `S044`), diferenciados por la columna `origen` (`real` / `simulada`). El archivo original exportado desde Google Forms, que contiene información identificativa, no se publica en el repositorio. Se comparte únicamente el archivo depurado `plantillas/encuesta_respuestas.csv`. El archivo original debe mantenerse con acceso restringido y utilizarse únicamente para los fines académicos del proyecto.
 
 ## 7. Verificación con herramientas (Python/R)
 
